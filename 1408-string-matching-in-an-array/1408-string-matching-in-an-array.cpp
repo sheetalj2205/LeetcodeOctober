@@ -9,7 +9,7 @@ public:
                 }
                 if(j.find(word) != -1){
                     ans.push_back(word);
-                    break;
+                    break; //use break to avoid same strings in the result
                 }
             }
         }
