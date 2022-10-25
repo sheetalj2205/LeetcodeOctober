@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
+        //accepted in 1 time- 
         string a1 = "";
         string a2 = "";
         
