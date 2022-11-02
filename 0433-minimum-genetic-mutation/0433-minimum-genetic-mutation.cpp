@@ -10,6 +10,7 @@ public:
         //first push start string to queue
         q.push(start);
         mp[start] = 1;
+        
         //iterate till q is empty
         while(!q.empty()){
             //iterate queue from the back as size of queue always varies
@@ -29,11 +30,13 @@ public:
                     for(int k = 0; k<4; k++){
                         st[j] = "ACGT"[k];
                         
+                        //check if that string is already present in map and bank or not
                         if(!mp[st] && find(bank.begin(), bank.end(), st) != bank.end()){
                             q.push(st);
                             mp[st] = 1;
                         }
                     }
+                    //backtrack
                     st[j] = ch;
                 }   
             }
